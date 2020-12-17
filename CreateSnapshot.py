@@ -13,7 +13,7 @@ def lambda_handler(event, context):
                 {
                     'Key': 'Database',
                     'Value': dbInstance
-                }
+                },
                 {
                     'Key': 'Time',
                     'Value': dbInstance+'{}'.format(datetime.datetime.now().strftime("%y-%m-%d-%H"))
